@@ -1,0 +1,80 @@
+.forecast-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lottie-header {
+    width: 100px;
+}
+
+.forecast-location {
+    min-width: 33%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 1rem;
+
+    img {
+        width: 40px;
+    }
+
+    .location-details {
+        line-height: 1.5rem;
+
+        p {
+            display: flex;
+            gap: 5px;
+        }
+    }
+}
+
+.favorite-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: .5em;
+    font-size: 1.3rem;
+
+    button {
+        font-size: 2rem;
+    }
+}
+
+.favorite-btn {
+
+    &.active {
+        button {
+            &>* {
+                fill: $red;
+                color: $red;
+                animation: heart .2s ease-in;
+            }
+        }
+    }
+}
+
+@keyframes heart {
+    0% {
+        rotate: 0deg;
+    }
+
+    33% {
+        rotate: 10deg;
+    }
+
+    66% {
+        rotate: -10deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .forecast-header-container {
+        width: 90%;
+    }
+}

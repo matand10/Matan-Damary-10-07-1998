@@ -1,0 +1,12 @@
+.favorite-container {
+    height: calc(100% - 60px);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+
+    .forecast-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}

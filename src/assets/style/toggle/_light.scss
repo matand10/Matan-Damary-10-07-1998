@@ -1,0 +1,8 @@
+body.light {
+    background-image: url('../../img/light.png');
+    color: $dark;
+}
+
+.light .side-nav {
+    box-shadow: inset 0px -46px 3px -40px rgba($color: $color1, $alpha: 0.75)
+}

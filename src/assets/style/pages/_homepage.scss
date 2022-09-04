@@ -1,0 +1,17 @@
+#root {
+    height: 100vh;
+    width: 100%;
+}
+
+.homepage-container {
+    height: calc(100% - 75px);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-container {
+    width: 800px;
+    opacity: 0.5;
+}

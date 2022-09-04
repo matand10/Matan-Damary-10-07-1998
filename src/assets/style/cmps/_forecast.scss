@@ -1,0 +1,74 @@
+.forecast-container {
+    background: $color4;
+    backdrop-filter: blur(3px);
+    padding: 1rem;
+    border: 2px solid $color4;
+    border-radius: 0.6em;
+    box-shadow: 0 1.8em 3.7em $shadow;
+    max-width: 800px;
+    justify-content: center;
+}
+
+.forecast-list-container {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.forecast-list-wrapper {
+    display: flex;
+    overflow-x: hidden;
+    gap: 1.2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content {
+    display: flex;
+    min-width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-direction: column;
+    padding: 0;
+
+    h1 {
+        display: block;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    p {
+        display: flex;
+        gap: 5px;
+    }
+}
+
+.lottie-container {
+    height: 120px;
+}
+
+.delete-forecast-btn {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    z-index: 5;
+    padding: .5rem;
+    transition: .2s;
+
+    &:hover {
+        background-color: $shadow;
+    }
+}
+
+@media (max-width: $break-narrow) {
+    .forecast-list-wrapper {
+        height: 400px;
+    }
+}

@@ -1,0 +1,166 @@
+.header-container {
+    height: 60px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: $color4;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid $color4;
+    z-index: 5;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+
+    img {
+        width: 50px;
+        opacity: 0.7;
+    }
+}
+
+.header-nav {
+    div {
+        margin-inline-end: 10px;
+        font-size: 1.5rem;
+    }
+
+    a {
+        display: none;
+    }
+}
+
+.selected {
+    box-shadow: inset 0px -46px 3px -40px rgba($color: $shadow, $alpha: 0.75);
+}
+
+.action-btn-container {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 51px;
+    height: 31px;
+    margin: 0 10px;
+
+    input {
+        display: none;
+    }
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 22px;
+        width: 22px;
+        left: 5px;
+        bottom: 5px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+}
+
+.switch input:checked+.slider {
+    background-color: $active;
+}
+
+.switch input:checked+.slider::before {
+    transform: translateX(20px);
+}
+
+.side-nav {
+    height: 100vh;
+    width: 250px;
+    display: none;
+    color: $color1;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding: 1rem;
+    transition: 0.5s;
+    animation: sidenav .2s;
+}
+
+.side-nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        width: 100%;
+        margin-top: 30px;
+        padding: 1rem .5rem;
+        color: $color1;
+        text-align: center;
+    }
+}
+
+@keyframes sidenav {
+    0% {
+        right: -250px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@media (min-width: $break-narrow) {
+    .header-container {
+        padding: 0 4rem;
+    }
+
+    .header-nav {
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+        &>*:not(:last-child) {
+            margin-inline-end: 2em;
+        }
+
+        div {
+            display: none;
+        }
+
+        a {
+            height: 100%;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: aliceblue;
+            }
+        }
+    }
+}

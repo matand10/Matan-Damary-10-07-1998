@@ -1,0 +1,45 @@
+body.dark {
+    background-image: url('../../img/dark.png');
+    color: $color1;
+}
+
+.dark .card-content {
+    color: $color1;
+}
+
+.dark .header-nav a {
+    color: $color1;
+}
+
+.dark .header-nav a {
+    color: $color1;
+
+    &:hover {
+        background-color: rgba($color: $color1, $alpha: 0.3);
+    }
+}
+
+.dark .header-nav .selected {
+    box-shadow: inset 0px -46px 3px -40px rgba($color: $color1, $alpha: 0.75)
+}
+
+.dark ::placeholder {
+    color: $color1;
+}
+
+.dark input {
+    color: $color1;
+}
+
+.dark .delete-forecast-btn {
+    color: $color1;
+}
+
+.dark .side-nav {
+    background-color: $light;
+    color: $dark;
+
+    a {
+        color: $dark;
+    }
+}
