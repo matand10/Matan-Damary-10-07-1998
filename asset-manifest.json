@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Matan-Damary-10-07-1998/static/css/main.14054550.css",
-    "main.js": "/Matan-Damary-10-07-1998/static/js/main.580f6d7a.js",
+    "main.js": "/Matan-Damary-10-07-1998/static/js/main.ec47b947.js",
     "static/media/dark.png": "/Matan-Damary-10-07-1998/static/media/dark.841c54ec4350f8e744bf.png",
     "static/media/light.png": "/Matan-Damary-10-07-1998/static/media/light.8db38a19b395fde2899d.png",
     "index.html": "/Matan-Damary-10-07-1998/index.html",
     "main.14054550.css.map": "/Matan-Damary-10-07-1998/static/css/main.14054550.css.map",
-    "main.580f6d7a.js.map": "/Matan-Damary-10-07-1998/static/js/main.580f6d7a.js.map"
+    "main.ec47b947.js.map": "/Matan-Damary-10-07-1998/static/js/main.ec47b947.js.map"
   },
   "entrypoints": [
     "static/css/main.14054550.css",
-    "static/js/main.580f6d7a.js"
+    "static/js/main.ec47b947.js"
   ]
 }
